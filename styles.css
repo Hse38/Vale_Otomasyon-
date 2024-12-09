@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Sarı */
+    color: #333;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #FFFACD; /* Açık Sarı */
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #FFD700; /* Sarı */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#services, #about, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #FFD700; /* Sarı */
+    color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FFD700; /* Sarı */
+    color: #333;
+}
