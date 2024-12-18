@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Durum Butonları ile Tablo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4CA1AF;
+      color: white;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      margin: 2px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-accept {
+      background-color: #28a745;
+    }
+
+    .btn-reject {
+      background-color: #dc3545;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Gelen Talepler</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Talep ID</th>
+        <th>Ad Soyad</th>
+        <th>Tarih</th>
+        <th>Durum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Ahmet Yılmaz</td>
+        <td>2024-06-12</td>
+        <td>
+          <button class="btn btn-accept">Onayla</button>
+          <button class="btn btn-reject">İptal Et</button>
+        </td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Ayşe Demir</td>
+        <td>2024-06-14</td>
+        <td>
+          <button class="btn btn-accept">Onayla</button>
+          <button class="btn btn-reject">İptal Et</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

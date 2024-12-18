@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelen Talepler</title>
+  <style>
+    /* Sayfa Temel Stilleri */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header (Başlık Bölümü) */
+    header {
+     background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+     color: #fff;
+     padding: 1rem 2rem;
+     display: flex;
+     justify-content: center; /* Başlığı ortalamak için */
+     align-items: center;     /* Dikey hizalamayı ortala */
+     position: relative;      /* Logo konumlandırması için */
+    }
+
+    .logo-container {
+     position: absolute;
+     left: 2rem;              /* Logoyu sol tarafa yaslar */
+    }
+
+    .logo {
+     width: 40px;
+     height: auto;
+    }
+
+    .header-title {
+     font-size: 1.5rem;
+     font-weight: bold;
+    }
+
+
+    /* Ana İçerik Alanı */
+    .container {
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 1200px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Tablo Stilleri */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table thead {
+      background-color: #4CA1AF;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    table th, table td {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      margin: 2px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-accept {
+      background-color: #28a745;
+    }
+
+    .btn-reject {
+      background-color: #dc3545;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .content {
+      flex: 1; /* İçeriğin kalan alanı kaplamasını sağlar */
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    /* Responsive Tasarım */
+    @media (max-width: 768px) {
+      table th, table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <a href="https://www.mahsunusta.com/" target="_blank">
+      <img src="mahsun.jpg" alt="Logo" class="logo"></a>
+    </div>
+    <div class="header-title">HAZIRLANMASI GEREKEN ARAÇLAR</div>
+  </header>
+  
+
+  <!-- Talep Tablosu -->
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Qr Numarası</th>
+          <th>Tarih</th>
+          <th>Durum</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Örnek Veriler -->
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>2024-06-17</td>
+          <td>
+            <button class="btn btn-accept">Onayla</button>
+            <button class="btn btn-reject">İptal Et</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>25</td>
+          <td>2024-06-18</td>
+          <td>
+            <button class="btn btn-accept">Onayla</button>
+            <button class="btn btn-reject">İptal Et</button>
+          </td>>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>24</td>
+          <td>2024-06-19</td>
+          <td>
+            <button class="btn btn-accept">Onayla</button>
+            <button class="btn btn-reject">İptal Et</button>
+          </td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Ayşe Demir</td>
+            <td>2024-06-14</td>
+            <td>
+              <button class="btn btn-accept">Onayla</button>
+              <button class="btn btn-reject">İptal Et</button>
+            </td>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.linkedin.com/in/haluk-%C5%9Fakir-ekinci-4773b2224/" target="_blank" style="color: #4CA1AF; text-decoration: none; margin-left: 10px;">
+        © 2024 Heas-TECH. Tüm Hakları Saklıdır.
+  </footer>
+</body>
+</html>
